@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rj-website/static/css/main.142e1e64.css",
+    "main.js": "/rj-website/static/js/main.e849f569.js",
+    "index.html": "/rj-website/index.html",
+    "main.142e1e64.css.map": "/rj-website/static/css/main.142e1e64.css.map",
+    "main.e849f569.js.map": "/rj-website/static/js/main.e849f569.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.142e1e64.css",
+    "static/js/main.e849f569.js"
+  ]
+}

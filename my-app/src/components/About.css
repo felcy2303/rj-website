@@ -1,0 +1,196 @@
+.about-container {
+  min-height: 100vh;  /* Change height to min-height for full viewport height */
+  background: url('https://wallpaperaccess.com/full/508840.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;  /* Allow flex children to stack vertically */
+  align-items: center;
+  justify-content: flex-start;  /* Start content from top */
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;  /* Added some padding for better spacing */
+}
+
+.about-content {
+  max-width: 800px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  animation: fadeIn 1.2s ease-out;
+  overflow: hidden;
+  margin-bottom: 50px;  /* Added margin for separation */
+}
+
+.about-title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.about-subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #f3c623;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.about-description p {
+  margin-bottom: 20px;
+}
+
+.about-contact {
+  font-size: 1.2rem;
+  margin-top: 40px;
+}
+
+.about-contact p {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Timeline Section */
+.about-timeline {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.timeline li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-year {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f3c623;
+  margin-right: 15px;
+}
+
+/* Meet the Team Section */
+.about-team {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.team-members {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.team-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* Values & Vision Section */
+.about-values {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.values-vision {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.value {
+  text-align: center;
+  width: 100px;
+}
+
+.value-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.value p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    margin-bottom: 30px;
+  }
+
+  .values-vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .value {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+

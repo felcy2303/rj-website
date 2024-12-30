@@ -1,0 +1,206 @@
+/* Basic Styling for Projects Section */
+.projects-container {
+  background: url('https://photoframd.com/wp-content/uploads/2013/08/sony-rx100-m2-hdr-7.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects-container h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: black;  /* Title in black for contrast */
+}
+
+/* Grid Layout for Project Cards */
+.projects-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+/* Project Card Design */
+.project-card {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Scrollbar Customization */
+.projects-gallery::-webkit-scrollbar {
+  width: 10px;
+}
+
+.projects-gallery::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.projects-gallery::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #333;
+  animation: fadeInUp 0.5s ease;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.modal-content h2 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  margin: 15px;
+  line-height: 1.6;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Hover Effect for Close Button */
+.close-btn:hover {
+  color: #f4a261;
+}
+
+/* Keyframe Animation for Modal Fade-in */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+  }
+
+  .modal-content img {
+    height: 250px;
+  }
+
+  .modal-content h2 {
+    font-size: 2rem;
+  }
+
+  .modal-content p {
+    font-size: 1rem;
+  }
+
+  .close-btn {
+    font-size: 1.5rem;
+  }
+}
+.explore-more-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.explore-more-btn:hover {
+  background: #27ae60;
+  transform: scale(1.05);
+}
+
+.additional-projects {
+  margin-top: 50px;
+}
+
+.additional-projects h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: black;
+}
+.all-projects-container {
+  padding: 50px 20px;
+  text-align: center;
+  color: black;
+  background-color: #7a48f9;
+}
+
+.all-projects-container h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+

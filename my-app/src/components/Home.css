@@ -1,0 +1,172 @@
+/* Main Container */
+.home-container {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Background Parallax Slideshow */
+.slideshow-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  animation: slideBackground 25s infinite;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Background Animation */
+@keyframes slideBackground {
+  10% {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/023/122/853/non_2x/modern-office-building-exterior-3d-render-business-architecture-concept-ai-generated-free-photo.jpg');
+  }
+  25% {
+    background-image: url('https://png.pngtree.com/background/20230527/original/pngtree-an-architectural-rendering-of-the-downtown-office-building-picture-image_2757715.jpg');
+  }
+  50% {
+    background-image: url('https://wallpapercave.com/wp/wp4914381.jpg');
+  }
+  75% {
+    background-image: url('https://img.freepik.com/premium-photo/interior-structure-hotel-building_87720-116810.jpg');
+  }
+  100% {
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230616/pngtree-exterior-design-of-a-modern-house-in-the-city-a-3d-image_3606113.jpg');
+  }
+}
+
+/* Dark Overlay */
+.home-overlay {
+  background: rgba(0, 0, 0, 0.7);  /* Darker Overlay */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+/* Section Scrolling */
+.scroll-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.3s ease, transform 1.3s ease;
+  scroll-snap-align: start;
+}
+
+.scroll-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Info Box Design */
+.info-box {
+  text-align: center;
+  max-width: 850px;
+  padding: 70px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.info-box h1, h2 {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  letter-spacing: 1.2px;
+}
+
+.info-box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Typography Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.fade-in-delay {
+  opacity: 0;
+  animation: fadeIn 2.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Profit Bar */
+.profit-bar {
+  height: 15px;
+  width: 70%;
+  background: #444;
+  border-radius: 10px;
+  margin: 30px auto;
+}
+
+.profit-progress {
+  height: 100%;
+  border-radius: 10px;
+  background: #2ecc71;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Explore Button */
+.explore-btn {
+  padding: 1.5vw 4vw;
+  font-size: 1.5vw;
+  background: linear-gradient(145deg, #e74c3c, #f39c12);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s;
+  border-radius: 50px;
+}
+
+.explore-btn:hover {
+  background: #e67e22;
+  transform: scale(1.1);
+}
+
+/* Achievements List */
+.achievements-list {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements-list li {
+  font-size: 1.4rem;
+  margin: 12px 0;
+  transition: transform 0.3s ease;
+}
+
+.achievements-list li:hover {
+  transform: translateX(10px);
+}
+.logo {
+  width: 120px; /* Adjust to make the logo larger */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the logo if needed */
+}
+
+
+
+
+
+
+
+
+
+

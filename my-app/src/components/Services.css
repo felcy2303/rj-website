@@ -1,0 +1,137 @@
+.services-container {
+  position: relative; /* Establishes a containing block for the pseudo-element */
+  text-align: center;
+  padding: 100px 20px;
+  background: none; /* Remove the background image from here */
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden; /* Prevent pseudo-element overflow */
+}
+
+.services-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://th.bing.com/th/id/R.aa23e49e520305c92f609e84945e625c?rik=npeE5C23nCMF8g&riu=http%3a%2f%2farchitizer-prod.imgix.net%2fmedia%2fmediadata%2fuploads%2f1691076172677TH052820_PSW_OZK_int_0169.jpg%3fw%3d1680%26q%3d60%26auto%3dformat%2ccompress%26cs%3dstrip&ehk=usCY8XQ%2biTWuvmejHYA5aD4YGjts8csV0bLZjFfAfAQ%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover;
+  filter: blur(10px); /* Apply blur effect */
+  z-index: -1; /* Place the pseudo-element behind the content */
+}
+
+.services-title {
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+.services-description {
+  font-size: 1.4rem;
+  margin-bottom: 80px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-grid {
+  display: flex;
+  flex-direction: column;  /* Vertical stacking */
+  gap: 80px;  /* Space between cards */
+  align-items: center;  /* Center the cards horizontally */
+  width: 100%;
+}
+
+.service-card {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 80%;  /* Take most of the width */
+  max-width: 1000px;  /* Limit maximum width */
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.service-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.service-info {
+  padding: 50px;
+}
+
+.service-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.service-info p {
+  font-size: 1.2rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.modal-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.modal-close {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.modal-close:hover {
+  background: #555;
+}
+.modal-content img.modal-extra-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+ 

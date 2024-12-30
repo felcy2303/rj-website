@@ -1,0 +1,26 @@
+footer {
+    background-image: url('C:\Users\Rovia\OneDrive\Desktop\website2\my-app\public\images\build1.jpg');
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  footer a {
+    color: #f4a261;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #e76f51;
+  }
+  
